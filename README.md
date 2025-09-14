@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# FCFS Scheduling Simulation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **React-based simulation** of the First-Come, First-Served (FCFS) CPU Scheduling Algorithm.  
+This project provides a **visual and interactive** way to understand FCFS through **tables and Gantt charts**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🛠️ Technologies
+- **React** – Frontend library for UI components  
+- **Tailwind CSS** – Utility-first CSS framework for styling  
+- **Chart.js / React-chartjs-2** – For Gantt chart and data visualization  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
+- Dynamic input for number of processes, burst times, and (optional) arrival times  
+- Automatic calculation of:
+  - **Waiting Time (WT)**  
+  - **Turnaround Time (TAT)**  
+  - **Average WT & TAT**  
+- Results displayed in **tabular format**  
+- Interactive **Gantt Chart** to visualize process scheduling  
+- Clean and responsive UI  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📖 The Process
+1. **User Input**  
+   - Enter number of processes and their burst times (and arrival times if required).  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Computation**  
+   - Apply **FCFS Algorithm**: processes scheduled in the order they arrive.  
+   - Waiting and Turnaround times are computed for each process.  
 
-### `npm run build`
+3. **Output**  
+   - A **results table** with WT & TAT for each process.  
+   - **Average WT & TAT** displayed.  
+   - A **Gantt Chart** that visually represents execution order.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ▶️ Running the Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the Repository
+```bash
+git clone hhttps://github.com/e4ekhlaque/OSproject.git
 
-### `npm run eject`
+cd fcfs-scheduler
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm run dev
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## The Preview
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> coming soon
