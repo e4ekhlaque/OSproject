@@ -45,7 +45,7 @@ This project provides a **visual and interactive** way to understand FCFS throug
 ```bash
 git clone hhttps://github.com/e4ekhlaque/OSproject.git
 
-cd fcfs-scheduler
+cd OSproject
 
 npm install
 
