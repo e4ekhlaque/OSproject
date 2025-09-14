@@ -49,7 +49,7 @@ cd OSproject
 
 npm install
 
-npm run dev
+npm start
 
 ```
 ---
