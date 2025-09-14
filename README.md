@@ -43,7 +43,7 @@ This project provides a **visual and interactive** way to understand FCFS throug
 
 ### 1. Clone the Repository
 ```bash
-git clone hhttps://github.com/e4ekhlaque/OSproject.git
+git clone https://github.com/e4ekhlaque/OSproject.git
 
 cd OSproject
 
