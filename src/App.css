@@ -1,38 +1,172 @@
-.App {
+/* === 1. General Setup & Variables === */
+:root {
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --accent: #2d7bf6;
+  --muted: #6b7280;
+  --danger: #e74c3c;
+  --border-light: #eef2f7;
+  --theme: #234771;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(110deg, #17212d 0%, #07247c 100%);
+  min-height: 200vh;
+}
+
+/* === 2. Typography === */
+h1,
+h2,
+h3 {
   text-align: center;
+  color: #042347;
+}
+h1 {
+  font-size: 24px;
+  color: rgb(255, 255, 255, 0.9);
+}
+h2 {
+  font-size: 18px;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  color: var(--theme);
+}
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input{
+  border-radius: 0.1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* === 3. Layout Containers === */
+.container {
+  display: flex;
+  margin: 40px auto;
+  padding: 24px 30px;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  max-width: 1000px;
+  flex-direction: column;
+  box-shadow: 2px 5px 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* === 4. Forms & Inputs === */
+#processForm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  align-items: flex-end;
+}
+#processForm label {
   display: flex;
   flex-direction: column;
+  gap: 6px;
+  color: #374151;
+  font-size: 14px;
+}
+#processForm input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* === 5. Buttons === */
+button {
+  background: var(--theme);
+  color: rgb(255, 255, 255, 0.9);
+  border: none;
+  padding: 9px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  width: fit-content;
+
+  /* Aligns button with inputs if needed */
+  /* align-self: flex-end; */
+}
+button:hover{
+  background-color: #1e3751;
+  box-shadow: 2px 5px 10px;
+}
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* === 6. Tables === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th,
+td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 14px;
+}
+th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* Remove border from last table row for cleaner look */
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* === 7. Gantt Chart === */
+.gantt {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 12px;
+  height: 80px;
+  overflow-x: auto;
+  border: 1px dashed #e6e9ef;
+  background: linear-gradient(180deg, #fff, #fbfdff);
+  border-radius: 8px;
+}
+.process {
+  /* Use flex-grow to represent duration instead of fixed width */
+  flex-shrink: 0;
+  height: 48px;
+  background: linear-gradient(90deg, #60a5fa, #2563eb);
+  color: white;
+  border-radius: 6px;
+  margin-right: 4px;
+  padding: 6px 10px;
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.15);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  min-width: 40px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* === 8. Results & Averages === */
+#averages {
+  margin-top: 20px;
+  color: #111827;
+  font-weight: 600;
+  text-align: center;
 }
